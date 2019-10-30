@@ -123,6 +123,7 @@ vidc.enc.narrow.searchrange=1
 vidc.debug.perf.mode=2
 vidc.enc.dcvs.extra-buff-count=2
 vidc.enc.disable.pq=true
+persist.media.treble_omx=false
 
 # Netmgrd
 ro.use_data_netmgrd=true
