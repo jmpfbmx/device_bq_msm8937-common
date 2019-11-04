@@ -42,7 +42,9 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
-TARGET_KERNEL_SOURCE := kernel/bq/msm8937
+TARGET_PREBUILT_KERNEL := device/bq/msm8937-common/kernel/zImage
+PRODUCT_COPY_FILES += \
+  $(TARGET_PREBUILT_KERNEL):kernel
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
