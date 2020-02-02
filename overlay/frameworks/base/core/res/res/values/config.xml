@@ -222,7 +222,7 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
+    <add-resource type="bool" name="config_supportDoubleTapWake">true</add-resource>
 
     <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -236,7 +236,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
+    <add-resource type="integer" name="config_deviceHardwareKeys">83</add-resource>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -250,7 +250,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
+    <add-resource type="integer" name="config_deviceHardwareWakeKeys">64</add-resource>
 
     <!-- Disable buttons backlight configurations -->
     <integer name="config_buttonBrightnessSettingDefault">0</integer>
