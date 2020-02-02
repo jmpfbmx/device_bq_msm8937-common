@@ -213,8 +213,8 @@ TARGET_RIL_VARIANT := caf
 USE_SENSOR_MULTI_HAL := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/wakeup_gesture_enable"
